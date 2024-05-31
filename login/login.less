@@ -1,0 +1,257 @@
+@buttonColor: #A259FF;
+a {
+    text-decoration: none;
+}
+.oswald {
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.wrapper {
+    background-color: #2B2B2B;
+}
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    background-color: #3B3B3B;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login {
+    height: 100%;
+    background: center url(./register-images/chart.svg) no-repeat;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        max-width: 50%;
+        background: #2B2B2B;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-shadow: -74px 0px 100px -100px rgba(162, 89, 255, 0.42);
+        -moz-box-shadow: -74px 0px 100px -100px rgba(162, 89, 255, 0.42);
+        box-shadow: -74px 0px 100px -100px rgba(162, 89, 255, 0.42);
+    }
+    &__header {
+        .oswald();
+        color: #CCC;
+        font-size: 48px;
+        font-weight: 300;
+        margin-bottom: 35px;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        max-width: 333px;
+        width: 100%;
+        margin-bottom: 25px;
+        &-question {
+            .oswald();
+            line-height: 100%;
+            font-size: 12px;
+            color: @buttonColor;
+            text-align: center;
+        }
+        &-item {
+            width: 100%;
+            border: none;
+            background: #fff;
+            border-radius: 20px;
+            height: 46px;
+            &::placeholder {
+                .oswald();
+                color: #D3D3D3;
+            }
+        }
+        &-button {
+            .oswald();
+            width: 100%;
+            line-height: 140%;
+            height: 46px;
+            border: none;
+            border-radius: 20px;
+            text-transform: uppercase;
+            background-color: @buttonColor;
+            color: #FFF;
+        }
+        &-wrapper {
+            position: relative;
+            input {
+                padding-left: 50px;
+            }
+            svg {
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 20px;
+                bottom: 0;
+            }
+        }
+    }
+    &__socials {
+        max-width: 383px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        align-items: center;
+        &-header {
+            .oswald();
+            color: #FFF;
+            opacity: 0.7;
+            font-size: 12px;
+            font-weight: 200;
+            line-height: 100%;
+            display: flex;
+            text-wrap: nowrap;
+            column-gap: 9px;
+            max-width: 383px;
+            width: 100%;
+            &::before,
+            &::after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                display: inline-block;
+                border-radius: 10px;
+                opacity: 0.2;
+                background: #FFF;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        &-icons {
+            display: flex;
+            column-gap: 17px;
+        }
+        &-question {
+            .oswald();
+            color: #FFF;
+            opacity: 0.7;
+            font-size: 12px;
+            font-weight: 200;
+            line-height: 100%;
+            &-link {
+                color: @buttonColor;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.footer {
+    max-width: 1335px;
+    margin: 0 auto;
+    padding-top: 21px;
+    &__office {
+        .oswald();
+        padding: 0;
+        font-size: 20px;
+        line-height: 147%;
+        color: #949494;
+        &-time {
+            color: #FFF;
+        }
+    }
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        &-block {
+            display: flex;
+            flex-direction: column;
+        }
+        &-header {
+            .oswald();
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration-line: underline;
+            margin-bottom: 8px;
+            color: #FFF;
+        }
+        &-item {
+            .oswald();
+            color: #FFF;
+            line-height: 23px;
+            text-decoration-line: underline;
+        }
+        &-social {
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            margin-top: 2px;
+        }
+    }
+    &__copy {
+        .oswald();
+        font-weight: 200;
+        line-height: 22px;
+        color: #FFF;
+        margin: 8px 0;
+        display: flex;
+        align-items: end;
+    }
+}
+.header {
+    padding: 16px 0;
+    &__menu-wrapper {
+        column-gap: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__account-wrapper {
+        display: flex;
+        column-gap: 55px;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    &__logo {
+        max-width: 50px;
+    }
+    &__link {
+        .oswald();
+        color: #FFF;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+        &-text {
+            .oswald();
+            letter-spacing: 0.56px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+    &__button {
+        .oswald();
+        color: #FFF;
+        border: 0;
+        line-height: 140%;
+        max-width: 150px;
+        width: 100%;
+        height: 35px;
+        background: @buttonColor;
+        border-radius: 20px;
+    }
+}

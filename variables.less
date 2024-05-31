@@ -1,0 +1,104 @@
+@buttonColor: #A259FF;
+body {
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #A259FF;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+button[disabled] {
+    border-radius: 20px;
+    border: 1px solid #F61B2C;
+    color: #CCCCCC;
+    background: #FFF;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #A259FF;
+}
+
+.invalid { // если произошла ошибка
+    border: 2px solid #F61B2C !important;
+    background: #2B2B2B !important;
+}
+.oswald {
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.wrapper {
+    background-color: #2B2B2B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    background-color: #3B3B3B;
+    padding: 0;
+}
+.wrapper-main {
+    height: auto;
+}
+.full-width-notFound {
+    height: 100%;
+    background-color: unset;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes rotate
+{
+    0% 
+    {   
+        content: url(./application-images/hourglass/hourglass-top.svg);
+        transform: rotate(0deg);
+    }
+    50% {
+        content: url(./application-images/hourglass/hourglass-split.svg);
+    }
+    100% 
+    {
+        content: url(./application-images/hourglass/hourglass-bottom.svg);
+        transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes scroll {
+    0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    }
+    100% {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0)
+    }
+   }
+   
+   @keyframes scroll {
+    0% {
+    transform: translate(0, 0);
+    }
+    100% {
+    transform: translate(-100%, 0)
+    }
+   }

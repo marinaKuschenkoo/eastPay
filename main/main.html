@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" /> -->
+    <link href="main.less" rel="stylesheet/less"/>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+<body class="body">
+    <div class="container-fluid">
+        <header class="header">
+            <div class=" container">
+            <div class="container header__wrapper row">
+                <div class="header__menu col">
+                    <a href="#" class="header__menu-item col header__link">О компании</a>
+                    <a href="#" class="header__menu-item col header__link">Новости</a>
+                    <a href="#" class="header__menu-item col header__link">Как это работает</a>
+                    <a href="#" class="header__menu-item col header__link">Контакты</a>
+                </div>
+                <div class="col header__logo-wrapper"><img src="./logo.svg" class="header__logo" alt=""></div>
+                <div class="col header__socials-wrapper">
+                    <div class="header__socials row">
+                        <div class="header__social col header__social-first">
+                            <a href="#" class="header__social-link social-tg"></a>
+                            <a class="header__social-text header__link">@east_pay</a>
+                        </div>
+                        <div class="header__social col header__social-second">
+                            <a href="#" class="header__social-link social-mail"></a>
+                            <a class="header__social-text header__link">info@east-pay.com</a>
+                        </div>
+                        <div class="col header__account-wrapper">
+                            <button class="header__account-button"><span class="header__button-text">Личный кабинет</span></button>
+                        </div>
+                        <div class="col header__languages-wrapper">
+                            <div class="header__languages-box col">
+                                <div class="row header__flag-wrapper"><img class="header__flag" src="../images/flags/ru.svg" alt=""></div>
+                                <div class="row header__arrow-wrapper"><img class="header__arrow" src="../images/caret-down-fill.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <div class="menu__line start-line"></div>
+                            <div class="menu__line"></div>
+                            <div class="menu__line end-line"></div>
+                          </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <main class="application">
+            <div class="container application__wrapper">
+            <div class="row application__wrapper-header">
+                <h1 class="col application__header">Заявка № 3462421</h1>
+                <div class="col application__header-text">
+                    <p class="application__rate">Курс обмена: 1 BTC = 2 434 325.3592 RUB</p>
+                    <span class="application__rate-fixed">курс зафиксирован</span>
+                </div>
+                <div class="col hourglass-timer">
+                    <div class="hourglass">
+                        <div class="hourglass__wrapper">
+                            <span class="hourglass__img"></span>
+                      </div>
+                      <span class="timer">15:00</span>
+                </div>
+            </div>
+            </div>
+            
+            <section class="navbar">
+                <div class="navbar__point active">
+                    <div class="navbar__circle navbar__circle-green"></div>
+                    <span class="navbar__point-text">Оплата</span>
+                </div>
+                <div class="line"><div></div></div>
+                <div class="navbar__point ">
+                    <div class="navbar__circle navbar__circle-orange"></div>
+                    <span class="navbar__point-text">Обработка</span>
+                </div>
+                <div class="line"><div></div></div>
+                <div class="navbar__point ">
+                    <div class="navbar__circle navbar__circle-red"></div>
+                    <span class="navbar__point-text">Готово</span>
+                </div>
+            </section>
+
+            <section class="input-blocks row">
+                <div class="input-block col">
+                    <label for="" class="input-block__label">Вы отдаете</label>
+                    <div class="input-block__wrapper">
+                        <div class="input-block__currency">
+                            <img src="./images/btc.svg" alt="" class="input-block__currency-img">
+                            <span class="input-block__currency-text">BTC</span>
+                        </div>
+                        <input type="text" class="input-block__input">
+                    </div>
+                </div>
+                <a href="" class="col input-block__exchange-img-wrapper"><img src="./images/arrows-exchange.svg" alt=""></a>
+                <div class="input-block col">
+
+                    <label for="" class="input-block__label">Вы получаете</label>
+                    <div class="input-block__wrapper input-block-get__wrapper">
+                        <div class="input-block__currency input-block__currency-get">
+                        </div>
+                        <span class="input-block__currency-sum">243 432 RUB</span>
+                    </div>
+
+                    <label for="" class="input-block__label">Номер карты Сбербанк(RUB)</label>
+                    <div class="input-block__wrapper">
+                        <div class="input-block__currency">
+                            <img src="./images/btc.svg" alt="" class="input-block__currency-img">
+                            <span class="input-block__currency-text">BTC</span>
+                        </div>
+                        <input type="text" class="input-block__input">
+                    </div>
+                </div>
+            </section>
+
+            <section class="requisites row" style="display: none;">
+                <div class="col requisites__inputs">
+                    <label for="" class="requisites__label input-block__label">Сумма к оплате</label>
+                    <div class="requisites__wrapper input-block__wrapper">
+                        <div class="requisites__sum">
+                            <span class="input-block__input">0.1 BTC</span>
+                            <a><img class="requisites__copy-img" src="./images/copy.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <label for="" class="requisites__label input-block__label">Реквизиты для оплаты</label>
+                    <div class="requisites__wrapper-payment input-block__wrapper">
+                        <div class="requisites__sum">
+                            <span class="input-block__input">0.1 BTC</span>
+                            <a><img class="requisites__copy-img" src="./images/copy.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col requisites__white-square-wrapper">
+                    <a><img class="requisites__white-square" src="./images/white-square.svg" alt=""></a>
+                </div>
+            </section>
+            <section class="buttons" style="display: none;">
+                <button class="buttons__button border">я оплатил</button>
+                <button class="buttons__button buttons__button-exit border">Отменить обмен</button>
+            </section>
+            <div class="payment-check" style="display: none;">
+                <span class="payment-check__text">Проверка оплаты</span>
+                <ul class="payment-check__dots">
+                    <li class="payment-check__dot navbar__circle  navbar__circle-green"></li>
+                    <li class="payment-check__dot navbar__circle  navbar__circle-orange"></li>
+                    <li class="payment-check__dot navbar__circle navbar__circle-red"></li>
+                </ul>
+            </div>
+        </main>
+</div>
+<footer class="footer">
+            <div class="container">
+            <div class="row footer__wrapper">
+                <div class="col footer__links-wrapper">
+                    <a class=" header__link footer__menu-item col">Заказать консультацию</a>
+                    <a class=" header__link footer__menu-item col">Сотрудничество</a>
+                    <a class=" header__link footer__menu-item col">Контакты</a>
+                </div>
+                <div class="col footer__logo-wrapper"><img src="./logo.svg" class="footer__logo" alt=""></div>
+                <div class="col footer__socials-wrapper">
+                    <div class="footer__socials">
+                        <div class="footer__socials-img">
+                    <a href="" class="col"><img src="./images/ig.svg" alt="" class="footer__ig"></a>
+                    <a href="" class="col"><img src="./images/tg.svg" alt="" class="footer__ig"></a>
+                    <a href="" class="col"><img src="./images/mail.svg" alt="" class="footer__ig"></a>
+                </div>
+                    <p class="footer__copy col">
+                        EastPay — Автообмен криптовалюты<br>© 2023
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+        <!-- Попап с условиями обмена -->
+
+        <div class="conditions" style="display: none;">
+            <div class="conditions__block">
+                <div class="conditions__header-wrapper">
+                    <h2 class="conditions__header">Условия обмена Tether(USDT) TRC20 на Сбербанк(RUB)</h2>
+                    <a><img src="./images/close.svg" alt=""></a>
+                </div>
+                <p class="conditions__text">
+                    Курс в заявке фиксируется на время, обозначенное в таймере на сайте после создания заявки.
+                    Прием активов осуществляется в сети TRC20. USDT поступает на кошелек после 1 подтверждения сети
+                    Все входящие крипто-активы получают оценку риска, посредством прохождения AML проверки на основании правил пользования сервисом. Проверка производится с помощью AML сервиса …
+                    В случае, если сумма активов окажется меньше заявленной, обмен будет приостановлен. Обменный пункт вправе отказать клиенту в возврате средств в одностороннем порядке*.
+                    <br>
+                    *Оператор обмена может отказать в проведении обмена/возврате денежных средств на основании правил пользования сервисом.
+                    <br>
+                    <br>
+                    Выплата осуществляется на указанную карту Сбербанка в ручном режиме.
+                    <br>
+                    Время выплаты – от 10 минут до 3 часов.
+                    <br>
+                    Выплаты третьим лицам и на карты иностранных банков <b>НЕ ОСУЩЕСТВЛЯЮТСЯ.</b> 
+                </p>
+                <button class="conditions__button buttons__button">ОБМЕНЯТЬ</button>
+            </div>
+        </div>
+
+        <!-- МОдальное окно меню -->
+        <div class="modal-menu" style="display: none;">
+            <div class="modal-menu__wrapper">
+            <div class="modal-menu__items">
+                <a href="" class="modal-menu__item">О компании</a>
+                <a href="" class="modal-menu__item">Новости</a>
+                <a href="" class="modal-menu__item">Как это работает</a>
+                <a href="" class="modal-menu__item">Контакты</a>
+                <a href="" class="modal-menu__item">Заказать консультацию</a>
+                <a href="" class="modal-menu__item">Сотрудничество</a>
+            </div>
+            <button class="modal-menu__button buttons__button">Личный кабинет</div>
+            </button>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

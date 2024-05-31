@@ -1,0 +1,210 @@
+@import url(./variables.less);
+.main {
+  background: center / cover url(http://127.0.0.1:5500/main-images/bg.svg) no-repeat;
+  background-position: 0 47px;
+  &__title {
+    .oswald();
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &-row {
+        display: flex;
+        justify-content: center;
+        column-gap: 22px;
+      }
+    }
+    &-item {
+      border: 0.75px solid #a259ff;
+      border-radius: 15px;
+      max-width: 323px;
+      width:100%;
+      min-height: 129px;
+      height: 100%;
+      box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+      background: #393939;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      &-title {
+        .oswald();
+        font-size: 24px;
+        color: #fff;
+        padding-top: 25px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      &-description {
+        .oswald();
+        font-weight: 200;
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__button {
+    .oswald();
+    border: 0;
+    padding:9px 0;
+    margin-top: 53px;
+    line-height: 140%;
+    border-radius: 20px;
+    max-width: 308px;
+    width: 100%;
+    max-height: 38px;
+    height: 100%;
+    background: #a259ff;
+    color: #fff;
+    text-align: center;
+  }
+  &__last {
+    &-wrapper {
+      background: @buttonColor;
+      width: 100%;
+    }
+    &-running {
+      display: grid;
+      grid-auto-flow: column;
+      overflow: hidden;
+      white-space: nowrap;
+      background: @buttonColor;
+      
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &-item {
+        .oswald();
+        font-size: 14px;
+        color: #e1e1e1;
+        display: flex;
+        align-items: center;
+        
+      }
+      &-img {
+        margin-right: 7px;
+      }
+      &-price,
+      &-date {
+        margin-right: 22px;
+      } 
+    }
+  }
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 1174px;
+      margin: 0 auto;
+      column-gap: 42px;
+      row-gap: 20px;  
+    }
+    &-item {
+      border: 1px solid #a259ff;
+      border-radius: 7px;
+      max-width: 262px;
+      width: 100%;
+      max-height: 206px;
+      height: 206px;
+      background: #fff;
+      padding: 20px 30px 0 30px;
+    }
+    &-profile {
+      display: flex;
+      gap: 9px;
+      margin-bottom: 10px;
+      &-pic {
+        max-width: 60px;
+      }
+      &-name {
+        .oswald();
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        text-align: center;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      &-tg {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 120%;
+        text-align: center;
+        color: #989898;
+      }
+    }
+    &-text {
+      .oswald();
+      font-size: 10px;
+      line-height: 145%;
+      color: #333;
+      overflow: hidden;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    margin-top: 51px;
+    &-header {
+      margin-top: 0;
+    }
+    &-block {
+      background: #2B2B2B;
+      width: 50%;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 77px;
+      -webkit-box-shadow: -100px -3px 100px -64px rgba(162, 89, 255, 0.25);
+-moz-box-shadow: -100px -3px 100px -64px rgba(162, 89, 255, 0.25);
+box-shadow: -100px -3px 100px -64px rgba(162, 89, 255, 0.25);
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid #858584;
+      border-radius: 20px;
+      padding: 9px 15px;
+      width: 315px;
+      height: 46px;
+      box-shadow: 0 -8px 30px 0 rgba(0, 0, 0, 0.45), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background: #393939;
+    }
+    &-link {
+      .oswald();
+      line-height: 140%;
+      color: #fff;
+    }
+  }
+}
+.marquee div {
+  display: inline-block;
+  padding-left: 10%;
+  -webkit-animation: scroll 21s infinite linear;
+  animation: scroll 21s infinite linear;
+ }
